@@ -14,7 +14,7 @@ export function TestimonialBlock({ title, body }: BlockProps) {
         <p
           data-payload-subfield="body"
           className="font-heading text-2xl sm:text-3xl text-text leading-relaxed mb-8"
-          style={{ textWrap: "balance" } as React.CSSProperties}
+          style={{ textWrap: "balance" } as React.CSSProperties} data-role="subheading"
         >
           &ldquo;{quote}&rdquo;
         </p>
@@ -24,7 +24,7 @@ export function TestimonialBlock({ title, body }: BlockProps) {
           ))}
         </div>
         {title && (
-          <p data-payload-subfield="title" className="font-body text-base font-semibold text-muted">
+          <p data-payload-subfield="title" className="font-body text-base font-semibold text-muted" data-role="subheading-2">
             {title}
           </p>
         )}

@@ -1,0 +1,52 @@
+{
+  "colors": {
+    "primary": "#c8ee44",
+    "secondary": "#a3d911",
+    "accent": "#ffffff",
+    "background": "#111111",
+    "surface": "#1c1c1c",
+    "text": "#f5f5f5",
+    "muted": "#888888"
+  },
+  "typography": {
+    "headingFont": "Unbounded",
+    "bodyFont": "Figtree",
+    "monoFont": "JetBrains Mono",
+    "scale": "spacious"
+  },
+  "spacing": "default",
+  "borderRadius": "lg",
+  "shadows": "dramatic",
+  "mood": "High-voltage chartreuse energy on charcoal — electric, modern, unforgettable",
+  "motionStyle": "expressive",
+  "layoutStyle": "bento-grid",
+  "designRules": [
+    "LAYOUT: Mixed-size bento grid for unit pricing — popular sizes get 2x wide cards. Stats displayed as large glowing chartreuse numbers. Search input has glowing bottom-border. Dense, no wasted space.",
+    "Chartreuse/lime is the hero color — use it boldly for headlines, buttons, and accents",
+    "Dark charcoal backgrounds make the electric green pop with maximum contrast",
+    "Bento grid layout with varied card sizes creates dynamic visual rhythm",
+    "White accent for secondary elements provides clean contrast against dark + lime",
+    "Expressive hover states with scale and glow effects amplify the electric feel",
+    "Chartreuse is the ONLY color — unit tables, pricing, and CTAs all use it against grayscale. This constraint creates electric tension",
+    "Reserve buttons glow with chartreuse box-shadow on hover — the most electric element on the page",
+    "CONVERSION: Facility pages use Layout Option C (hero units) — top 4 unit sizes as glowing bento cards above the fold, popular size gets 2x card. Then full table below. Search bar with glow in hero. On market pages, bento grid with unit pricing visible per facility.",
+    "CONVERSION: Reserve/CTA buttons must be the single most visually prominent element on every page — larger than navigation links, higher contrast than body text, with hover state that increases visual weight. Use the primary color at full saturation. Every unit card and table row MUST have a Reserve button.",
+    "CONVERSION: Use badges to show real-time social proof and urgency — 'Most Popular' on the best-selling size, 'X Left!' in a warning color when availability is low, 'Available' in a success color for in-stock units. Price must be the largest text element in every unit card, displayed in the primary or accent color."
+  ],
+  "designPatterns": {
+    "card": "<div className=\"bg-surface rounded-2xl p-7 border border-white/5 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10 transition-all\">",
+    "button": "<a className=\"bg-primary text-background font-bold px-8 py-3.5 rounded-xl text-base shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/40 hover:-translate-y-0.5 transition-all\">",
+    "buttonSecondary": "<a className=\"border-2 border-primary/30 text-primary font-bold px-8 py-3.5 rounded-xl hover:bg-primary/10 transition-all\">",
+    "heading": "<h2 className=\"font-heading text-5xl md:text-7xl font-extrabold text-primary tracking-tight leading-[0.9]\">",
+    "subheading": "<p className=\"text-xl text-text-muted leading-relaxed max-w-2xl\">",
+    "badge": "<span className=\"inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 text-sm font-semibold text-primary\">",
+    "input": "<input className=\"w-full bg-background border-2 border-white/10 rounded-xl px-5 py-3.5 text-text placeholder:text-text-muted focus:outline-none focus:border-primary/50 focus:ring-2 focus:ring-primary/20 transition\" />",
+    "sectionBg": "bg-background",
+    "sectionAltBg": "bg-surface",
+    "sectionDarkBg": "bg-gradient-to-br from-primary/10 via-background to-background",
+    "navStyle": "bg-background/80 backdrop-blur-xl border-b border-white/5",
+    "footerStyle": "bg-surface border-t border-white/5",
+    "iconBox": "<div className=\"h-14 w-14 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary\">",
+    "divider": "<div className=\"h-px bg-gradient-to-r from-primary/30 via-primary/5 to-transparent\">"
+  }
+}

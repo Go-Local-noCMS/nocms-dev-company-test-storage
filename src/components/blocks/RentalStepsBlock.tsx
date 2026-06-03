@@ -17,7 +17,7 @@ export function RentalStepsBlock({ title, body }: BlockProps) {
           <h2
             data-payload-subfield="title"
             className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-text text-center mb-16"
-            style={{ textWrap: "balance" } as React.CSSProperties}
+            style={{ textWrap: "balance" } as React.CSSProperties} data-role="heading"
           >
             {title}
           </h2>
@@ -33,7 +33,7 @@ export function RentalStepsBlock({ title, body }: BlockProps) {
                 <div className="absolute top-0 right-0 lg:right-auto lg:-translate-x-20 text-7xl font-heading font-bold text-primary/10 leading-none select-none">
                   {String(i + 1).padStart(2, "0")}
                 </div>
-                <p className="font-body text-base text-muted leading-relaxed max-w-xs">{text}</p>
+                <p className="font-body text-base text-muted leading-relaxed max-w-xs" data-role="subheading">{text}</p>
               </li>
             );
           })}

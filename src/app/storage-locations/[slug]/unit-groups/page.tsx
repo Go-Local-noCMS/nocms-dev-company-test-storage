@@ -57,8 +57,8 @@ export default async function UnitGroupsPage({ params }: Props) {
   if (slug === "_placeholder") {
     return (
       <main className="mx-auto max-w-3xl px-6 py-16">
-        <h1 className="text-3xl font-semibold">Available sizes</h1>
-        <p className="mt-4 text-zinc-600">
+        <h1 className="text-3xl font-semibold" data-role="heading-2">Available sizes</h1>
+        <p className="mt-4 text-zinc-600" data-role="text">
           Pick a location on the locations page to see available units.
         </p>
       </main>
@@ -109,10 +109,10 @@ export default async function UnitGroupsPage({ params }: Props) {
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           {loadError ? (
             <div role="alert" className="rounded-md border border-red-200 bg-red-50 p-6">
-              <p className="text-red-800 font-medium">
+              <p className="text-red-800 font-medium" data-role="text-2">
                 We&apos;re having trouble loading availability right now.
               </p>
-              <p className="mt-2 text-red-700 text-sm">
+              <p className="mt-2 text-red-700 text-sm" data-role="text-3">
                 Please try again shortly, or call {facility.phone ?? "us"} for help.
               </p>
               {process.env.NODE_ENV !== "production" && (
@@ -122,10 +122,10 @@ export default async function UnitGroupsPage({ params }: Props) {
               )}
             </div>
           ) : visible.length === 0 ? (
-            <p className="text-zinc-700">
+            <p className="text-zinc-700" data-role="text-4">
               No units currently available at {facility.name}.{" "}
               {facility.phone && (
-                <a href={`tel:${facility.phone.replace(/\s/g, "")}`} className="underline">
+                <a href={`tel:${facility.phone.replace(/\s/g, "")}`} className="underline" data-role="text-5">
                   Give us a call
                 </a>
               )}{" "}
@@ -137,7 +137,7 @@ export default async function UnitGroupsPage({ params }: Props) {
                 <section key={unitType} aria-labelledby={`type-${unitType}`}>
                   <h2
                     id={`type-${unitType}`}
-                    className="font-heading text-xl font-semibold text-text mb-4"
+                    className="font-heading text-xl font-semibold text-text mb-4" data-role="heading-3"
                   >
                     {unitType}
                   </h2>

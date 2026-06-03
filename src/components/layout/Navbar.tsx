@@ -53,7 +53,7 @@ export function Navbar({
     >
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:bg-accent focus:text-white focus:px-4 focus:py-2 focus:rounded-md focus:font-semibold"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:bg-accent focus:text-white focus:px-4 focus:py-2 focus:rounded-md focus:font-semibold" data-role="text"
       >
         Skip to main content
       </a>
@@ -197,7 +197,7 @@ export function Navbar({
               )}
               <a
                 href={ctaHref}
-                className="block text-center bg-secondary text-white font-semibold px-6 py-3 rounded-md shadow-lg"
+                className="block text-center bg-secondary text-white font-semibold px-6 py-3 rounded-md shadow-lg" data-role="cta-2"
               >
                 {ctaText}
               </a>

@@ -22,7 +22,7 @@ export function HeroBlock({ title, body, media }: BlockProps) {
         src={bg}
         alt={mediaAlt(media)}
         className="absolute inset-0 z-0 h-full w-full object-cover"
-        loading="eager"
+        loading="eager" data-role="media"
       />
       <div aria-hidden="true" className="absolute inset-0 z-[1] bg-primary/70" />
       <div className="relative z-[2] flex h-full items-center justify-center text-center min-h-[520px] px-6 py-20 sm:px-10 lg:px-16">
@@ -51,7 +51,7 @@ export function HeroBlock({ title, body, media }: BlockProps) {
             method="get"
             className="flex flex-col sm:flex-row items-stretch gap-3 max-w-xl mx-auto bg-white/95 rounded-lg p-2 shadow-2xl"
           >
-            <label htmlFor="hero-search" className="sr-only">
+            <label htmlFor="hero-search" className="sr-only" data-role="text">
               City or ZIP code
             </label>
             <div className="relative flex-1">
@@ -69,7 +69,7 @@ export function HeroBlock({ title, body, media }: BlockProps) {
             </div>
             <button
               type="submit"
-              className="inline-flex items-center justify-center gap-2 bg-accent text-text font-semibold px-8 py-3 rounded-md hover:opacity-90 transition"
+              className="inline-flex items-center justify-center gap-2 bg-accent text-text font-semibold px-8 py-3 rounded-md hover:opacity-90 transition" data-role="cta"
             >
               Search
             </button>

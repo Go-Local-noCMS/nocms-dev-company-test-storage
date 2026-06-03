@@ -52,7 +52,7 @@ export default async function StorageLocationsIndexPage() {
       <section className="py-12 lg:py-16 bg-background">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           {facilities.length === 0 ? (
-            <p className="text-center text-muted">
+            <p className="text-center text-muted" data-role="text">
               No locations yet — add one in your CMS to publish it here.
             </p>
           ) : groupByState ? (

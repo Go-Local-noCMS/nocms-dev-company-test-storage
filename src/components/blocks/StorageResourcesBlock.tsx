@@ -17,7 +17,7 @@ export function StorageResourcesBlock({ title, body, mediaArray }: BlockProps) {
           <h2
             data-payload-subfield="title"
             className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-text text-center mb-16"
-            style={{ textWrap: "balance" } as React.CSSProperties}
+            style={{ textWrap: "balance" } as React.CSSProperties} data-role="heading"
           >
             {title}
           </h2>
@@ -30,11 +30,11 @@ export function StorageResourcesBlock({ title, body, mediaArray }: BlockProps) {
                 <li key={i} className="bg-background rounded-xl border border-text/10 overflow-hidden shadow-sm hover:shadow-md transition">
                   {img && (
                     /* eslint-disable-next-line @next/next/no-img-element */
-                    <img src={img.url} alt={img.alt} className="w-full h-48 object-cover" />
+                    <img src={img.url} alt={img.alt} className="w-full h-48 object-cover" data-role="media" />
                   )}
                   <div className="p-6">
-                    <p className="font-heading text-lg font-semibold text-text mb-3">{text}</p>
-                    <a href="/resources" className="inline-flex items-center gap-1 text-primary text-sm font-medium hover:gap-2 transition-all">
+                    <p className="font-heading text-lg font-semibold text-text mb-3" data-role="subheading">{text}</p>
+                    <a href="/resources" className="inline-flex items-center gap-1 text-primary text-sm font-medium hover:gap-2 transition-all" data-role="text">
                       Read more <ArrowRight className="h-4 w-4" />
                     </a>
                   </div>
@@ -45,7 +45,7 @@ export function StorageResourcesBlock({ title, body, mediaArray }: BlockProps) {
         ) : (
           <div className="max-w-3xl mx-auto text-center">
             <Lexical value={body} className="prose prose-base text-muted mb-8" />
-            <a href="/resources" className="inline-flex items-center gap-2 bg-primary text-white font-semibold px-6 py-3 rounded-md hover:opacity-90 transition">
+            <a href="/resources" className="inline-flex items-center gap-2 bg-primary text-white font-semibold px-6 py-3 rounded-md hover:opacity-90 transition" data-role="cta">
               Browse all resources <ArrowRight className="h-4 w-4" />
             </a>
           </div>

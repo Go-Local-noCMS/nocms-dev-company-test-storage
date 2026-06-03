@@ -13,13 +13,13 @@ export async function BlogArchiveBlock({ title }: BlockProps) {
           <h2
             data-payload-subfield="title"
             className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-text text-center mb-16"
-            style={{ textWrap: "balance" } as React.CSSProperties}
+            style={{ textWrap: "balance" } as React.CSSProperties} data-role="heading"
           >
             {title}
           </h2>
         )}
         {posts.length === 0 ? (
-          <p className="text-center text-muted">No posts yet.</p>
+          <p className="text-center text-muted" data-role="text">No posts yet.</p>
         ) : (
           <ul className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {posts.map((p) => {
@@ -28,12 +28,12 @@ export async function BlogArchiveBlock({ title }: BlockProps) {
                 <li key={p.id} className="bg-background rounded-xl border border-text/10 overflow-hidden shadow-sm hover:shadow-md transition">
                   {cover && (
                     /* eslint-disable-next-line @next/next/no-img-element */
-                    <img src={cover} alt={mediaAlt(p.featuredImage)} className="w-full h-48 object-cover" />
+                    <img src={cover} alt={mediaAlt(p.featuredImage)} className="w-full h-48 object-cover" data-role="media" />
                   )}
                   <div className="p-6">
-                    <h3 className="font-heading text-xl font-semibold text-text mb-3">{p.title}</h3>
-                    {p.excerpt && <p className="font-body text-base text-muted mb-4">{p.excerpt}</p>}
-                    <a href={`/blog/${p.slug}`} className="inline-flex items-center gap-1 text-primary text-sm font-medium hover:gap-2 transition-all">
+                    <h3 className="font-heading text-xl font-semibold text-text mb-3" data-role="heading-2">{p.title}</h3>
+                    {p.excerpt && <p className="font-body text-base text-muted mb-4" data-role="subheading">{p.excerpt}</p>}
+                    <a href={`/blog/${p.slug}`} className="inline-flex items-center gap-1 text-primary text-sm font-medium hover:gap-2 transition-all" data-role="text-2">
                       Read more <ArrowRight className="h-4 w-4" />
                     </a>
                   </div>

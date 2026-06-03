@@ -17,7 +17,7 @@ export function FeaturesGridBlock({ title, body }: BlockProps) {
           <h2
             data-payload-subfield="title"
             className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-text text-center mb-16"
-            style={{ textWrap: "balance" } as React.CSSProperties}
+            style={{ textWrap: "balance" } as React.CSSProperties} data-role="heading"
           >
             {title}
           </h2>
@@ -30,7 +30,7 @@ export function FeaturesGridBlock({ title, body }: BlockProps) {
                 <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-5">
                   <Icon className="h-6 w-6" aria-hidden="true" />
                 </div>
-                <p className="font-body text-base text-muted leading-relaxed">{text}</p>
+                <p className="font-body text-base text-muted leading-relaxed" data-role="subheading">{text}</p>
               </li>
             );
           })}

@@ -1,0 +1,262 @@
+{
+  "version": 1,
+  "components": {
+    "sitelink-insurance-select": {
+      "file": "src/components/SitelinkInsuranceSelect.tsx",
+      "tag": "div"
+    },
+    "sitelink-order-summary": {
+      "file": "src/components/SitelinkOrderSummary.tsx",
+      "tag": "aside"
+    },
+    "sitelink-unit-table": {
+      "file": "src/components/SitelinkUnitTable.tsx",
+      "tag": "p"
+    },
+    "banner": {
+      "file": "src/components/blocks/Baseline.tsx",
+      "tag": "section"
+    },
+    "blog-archive": {
+      "file": "src/components/blocks/BlogArchiveBlock.tsx",
+      "tag": "section"
+    },
+    "divider": {
+      "file": "src/components/blocks/DividerBlock.tsx",
+      "tag": "div"
+    },
+    "features-grid": {
+      "file": "src/components/blocks/FeaturesGridBlock.tsx",
+      "tag": "section"
+    },
+    "hero": {
+      "file": "src/components/blocks/HeroBlock.tsx",
+      "tag": "section"
+    },
+    "lexical": {
+      "file": "src/components/blocks/Lexical.tsx",
+      "tag": "div"
+    },
+    "render-blocks": {
+      "file": "src/components/blocks/RenderBlocks.tsx",
+      "tag": "div"
+    },
+    "rental-steps": {
+      "file": "src/components/blocks/RentalStepsBlock.tsx",
+      "tag": "section"
+    },
+    "search-callout": {
+      "file": "src/components/blocks/SearchCalloutBlock.tsx",
+      "tag": "section"
+    },
+    "storage-resources": {
+      "file": "src/components/blocks/StorageResourcesBlock.tsx",
+      "tag": "section"
+    },
+    "testimonial": {
+      "file": "src/components/blocks/TestimonialBlock.tsx",
+      "tag": "section"
+    },
+    "blog-archive-main": {
+      "file": "src/components/blog/BlogArchiveMain.tsx",
+      "tag": "div"
+    },
+    "blog-archive-sidebar": {
+      "file": "src/components/blog/BlogArchiveSidebar.tsx",
+      "tag": "aside"
+    },
+    "blog-archive-wrapper": {
+      "file": "src/components/blog/BlogArchiveWrapper.tsx",
+      "tag": "div"
+    },
+    "blog-card": {
+      "file": "src/components/blog/BlogCard.tsx",
+      "tag": "article"
+    },
+    "blog-featured-article": {
+      "file": "src/components/blog/BlogFeaturedArticle.tsx",
+      "tag": "section"
+    },
+    "blog-search": {
+      "file": "src/components/blog/BlogSearch.tsx",
+      "tag": "form"
+    },
+    "cta-banner": {
+      "file": "src/components/content/CTABanner.tsx",
+      "tag": "section"
+    },
+    "contact-form-flat": {
+      "file": "src/components/content/ContactForm.tsx",
+      "tag": "div"
+    },
+    "content-block": {
+      "file": "src/components/content/ContentBlock.tsx",
+      "tag": "section"
+    },
+    "faq-accordion": {
+      "file": "src/components/content/FaqAccordion.tsx",
+      "tag": "section"
+    },
+    "gallery-block": {
+      "file": "src/components/content/GalleryBlock.tsx",
+      "tag": "section"
+    },
+    "hero-overlay": {
+      "file": "src/components/content/HeroOverlay.tsx",
+      "tag": "section"
+    },
+    "map-locations-accordion": {
+      "file": "src/components/content/MapLocationsAccordion.tsx",
+      "tag": "section"
+    },
+    "photo-grid": {
+      "file": "src/components/content/PhotoGrid.tsx",
+      "tag": "section"
+    },
+    "resource-cards": {
+      "file": "src/components/content/ResourceCards.tsx",
+      "tag": "section"
+    },
+    "size-guide-flat": {
+      "file": "src/components/content/SizeGuide.tsx",
+      "tag": "section"
+    },
+    "stats-bar": {
+      "file": "src/components/content/StatsBar.tsx",
+      "tag": "section"
+    },
+    "testimonials": {
+      "file": "src/components/content/Testimonials.tsx",
+      "tag": "section"
+    },
+    "why-section": {
+      "file": "src/components/content/WhySection.tsx",
+      "tag": "section"
+    },
+    "address": {
+      "file": "src/components/facility/Address.tsx",
+      "tag": "address"
+    },
+    "date-badge": {
+      "file": "src/components/facility/DateBadge.tsx",
+      "tag": "div"
+    },
+    "facility-card": {
+      "file": "src/components/facility/FacilityCard.tsx",
+      "tag": "article"
+    },
+    "facility-cards": {
+      "file": "src/components/facility/FacilityCards.tsx",
+      "tag": "section"
+    },
+    "facility-contact-info": {
+      "file": "src/components/facility/FacilityContactInfo.tsx",
+      "tag": "div"
+    },
+    "facility-count": {
+      "file": "src/components/facility/FacilityCount.tsx",
+      "tag": "div"
+    },
+    "facility-features": {
+      "file": "src/components/facility/FacilityFeatures.tsx",
+      "tag": "div"
+    },
+    "facility-gallery": {
+      "file": "src/components/facility/FacilityGallery.tsx",
+      "tag": "section"
+    },
+    "facility-hours": {
+      "file": "src/components/facility/FacilityHours.tsx",
+      "tag": "section"
+    },
+    "facility-map-sidebar": {
+      "file": "src/components/facility/FacilityMapSidebar.tsx",
+      "tag": "aside"
+    },
+    "facility-notice": {
+      "file": "src/components/facility/FacilityNotice.tsx",
+      "tag": "section"
+    },
+    "nearby-location-card": {
+      "file": "src/components/facility/NearbyLocationCard.tsx",
+      "tag": "article"
+    },
+    "breadcrumbs": {
+      "file": "src/components/layout/Breadcrumbs.tsx",
+      "tag": "nav"
+    },
+    "footer": {
+      "file": "src/components/layout/Footer.tsx",
+      "tag": "footer"
+    },
+    "main-brand-image": {
+      "file": "src/components/layout/MainBrandImage.tsx",
+      "tag": "a"
+    },
+    "main-logo": {
+      "file": "src/components/layout/MainLogo.tsx",
+      "tag": "a"
+    },
+    "navbar": {
+      "file": "src/components/layout/Navbar.tsx",
+      "tag": "header"
+    },
+    "page-hero": {
+      "file": "src/components/layout/PageHero.tsx",
+      "tag": "section"
+    },
+    "section-wrapper": {
+      "file": "src/components/layout/SectionWrapper.tsx",
+      "tag": "section"
+    },
+    "checkout": {
+      "file": "src/components/storage/Checkout.tsx",
+      "tag": "section"
+    },
+    "rental-steps-flat": {
+      "file": "src/components/storage/RentalSteps.tsx",
+      "tag": "section"
+    },
+    "app-link": {
+      "file": "src/components/ui/AppLink.tsx",
+      "tag": "Link"
+    },
+    "badge": {
+      "file": "src/components/ui/Badge.tsx",
+      "tag": "span"
+    },
+    "button": {
+      "file": "src/components/ui/Button.tsx",
+      "tag": "a"
+    },
+    "card": {
+      "file": "src/components/ui/Card.tsx",
+      "tag": "article"
+    },
+    "carousel": {
+      "file": "src/components/ui/Carousel.tsx",
+      "tag": "CarouselContext.Provider"
+    },
+    "dialog": {
+      "file": "src/components/ui/Dialog.tsx",
+      "tag": "DialogContext.Provider"
+    },
+    "external-video": {
+      "file": "src/components/ui/ExternalVideo.tsx",
+      "tag": "div"
+    },
+    "horizontal-rule": {
+      "file": "src/components/ui/HorizontalRule.tsx",
+      "tag": "div"
+    },
+    "motion-wrapper": {
+      "file": "src/components/ui/MotionWrapper.tsx",
+      "tag": "div"
+    },
+    "rich-text": {
+      "file": "src/components/ui/RichText.tsx",
+      "tag": "div"
+    }
+  },
+  "pages": {}
+}

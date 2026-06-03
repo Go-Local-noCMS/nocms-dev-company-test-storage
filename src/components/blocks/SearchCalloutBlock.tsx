@@ -14,18 +14,18 @@ export function SearchCalloutBlock({ title, body }: BlockProps) {
           <h2
             data-payload-subfield="title"
             className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6"
-            style={{ textWrap: "balance" } as React.CSSProperties}
+            style={{ textWrap: "balance" } as React.CSSProperties} data-role="heading"
           >
             {title}
           </h2>
         )}
         {sub && (
-          <p data-payload-subfield="body" className="font-body text-lg text-white/90 mb-10">
+          <p data-payload-subfield="body" className="font-body text-lg text-white/90 mb-10" data-role="subheading">
             {sub}
           </p>
         )}
         <form action="/search" method="get" className="flex flex-col sm:flex-row items-stretch gap-3 max-w-2xl mx-auto">
-          <label htmlFor="search-callout-input" className="sr-only">
+          <label htmlFor="search-callout-input" className="sr-only" data-role="text">
             Search by city or ZIP
           </label>
           <div className="relative flex-1">
@@ -40,7 +40,7 @@ export function SearchCalloutBlock({ title, body }: BlockProps) {
           </div>
           <button
             type="submit"
-            className="inline-flex items-center justify-center gap-2 bg-white text-primary font-semibold px-8 py-4 rounded-md hover:bg-surface transition"
+            className="inline-flex items-center justify-center gap-2 bg-white text-primary font-semibold px-8 py-4 rounded-md hover:bg-surface transition" data-role="text-2"
           >
             Find a unit
             <ArrowRight className="h-4 w-4" />

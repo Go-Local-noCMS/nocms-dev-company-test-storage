@@ -77,7 +77,7 @@ export function Footer({
                     </a>
                   </>
                 )}
-                {phone && email && <span className="mx-1">&middot;</span>}
+                {phone && email && <span className="mx-1" data-role="text">&middot;</span>}
                 {email && (
                   <>
                     <Mail className="h-4 w-4 text-primary shrink-0" aria-hidden="true" />
@@ -88,14 +88,14 @@ export function Footer({
                 )}
               </div>
             )}
-            <p className="text-white/50 text-xs">Mon&ndash;Fri: 9am&ndash;6pm &middot; Sat: 9am&ndash;5pm &middot; Sun: 10am&ndash;4pm</p>
+            <p className="text-white/50 text-xs" data-role="text-2">Mon&ndash;Fri: 9am&ndash;6pm &middot; Sat: 9am&ndash;5pm &middot; Sun: 10am&ndash;4pm</p>
           </div>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12 mb-12">
           {columns.map((col) => (
             <div key={col.title}>
-              <h3 className="font-heading text-sm font-semibold text-white tracking-wide uppercase mb-4">
+              <h3 className="font-heading text-sm font-semibold text-white tracking-wide uppercase mb-4" data-role="heading">
                 {col.title}
               </h3>
               <ul className="space-y-2.5">
